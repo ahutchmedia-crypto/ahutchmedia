@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sugar Coast | Palm Harbor & Tarpon Springs Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="logo">Sugar Coast</div>
+      <div class="tagline">by TransformMultimedia.com</div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">Palm Harbor • Tarpon Springs • Tampa Bay</p>
+      <h1>Discover restaurants, art, museums, tours, and everything fun.</h1>
+      <div class="hero-actions">
+        <button class="btn primary" id="btn-quick-picks">Today's quick picks</button>
+        <button class="btn ghost" id="btn-explore">Start exploring</button>
+      </div>
+      <div class="filters">
+        <label class="input">
+          <span>Search</span>
+          <input type="text" id="search" placeholder="Try coffee, Greek fare, murals" aria-label="Search places" />
+        </label>
+        <label class="input">
+          <span>Category</span>
+          <select id="category" aria-label="Filter by category">
+            <option value="all">All experiences</option>
+            <option value="restaurants">Restaurants & Cafés</option>
+            <option value="tours">Tours</option>
+            <option value="attractions">Attractions & Museums</option>
+            <option value="shops">Shops & Makers</option>
+            <option value="outdoors">Outdoor & Water</option>
+            <option value="nightlife">Nightlife</option>
+          </select>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="family-friendly" />
+          <span>Family friendly</span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="quick-picks">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Curated today</p>
+          <h2>Quick picks for a Sugar Coast day</h2>
+        </div>
+        <div class="chip" id="result-count">0 spots</div>
+      </div>
+      <div class="cards" id="card-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section alt">
+      <div class="cta">
+        <div>
+          <p class="eyebrow">Stay inspired</p>
+          <h2>Save this guide to your home screen</h2>
+          <p>Tap the share icon in your mobile browser and choose “Add to Home Screen” so Sugar Coast is always one tap away.</p>
+        </div>
+        <button class="btn primary" id="btn-save">How to add</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with sunshine by TransformMultimedia.com • Updated weekly with fresh local finds.</p>
+  </footer>
+
+  <dialog id="tip-dialog">
+    <h3>How to add Sugar Coast</h3>
+    <ol>
+      <li>On iPhone Safari: tap <strong>Share</strong> → <strong>Add to Home Screen</strong>.</li>
+      <li>On Android Chrome: tap the menu ⋮ → <strong>Add to Home screen</strong>.</li>
+      <li>You'll see the Sugar Coast icon on your device for easy access.</li>
+    </ol>
+    <button class="btn ghost" id="close-dialog">Got it</button>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
